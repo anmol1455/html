@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<script language="javascript">
+			function submit()
+			{
+				var n,count=0;
+				 n=document.getElementById("s").value;
+				var l=n.length;
+				 if(l<=3)
+				{
+				document.getElementById("msg").innerHTML="Password is too short.!!!";
+				}
+				if(l<=6&&l>3)
+				{
+				document.getElementById("msg").innerHTML="Password is average.!!!";
+				}
+				if(l==8)
+				{
+				document.getElementById("msg").innerHTML="Size of Password is perfact!!!";
+				}
+				if(l>8)
+				{
+				document.getElementById("msg").innerHTML="Password is too long.!!!";
+				}
+			}
+
+			function reset()
+			{
+				document.getElementById("s").value="";
+				document.getElementById("msg").innerHTML=" ";
+			}
+</script>
+</head>
+<body>
+password:-<input type="text" id="s"  onblur="submit()" onkeyup="submit()">
+<button id="btn" onclick="submit()">submit</button>
+<td><button id="btn" onclick="reset()">reset</button></td>
+<p id="msg"></p>
+</body>
+</html>

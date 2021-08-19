@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+		function upp(val)
+		{
+			var n=document.getElementById(val).value;
+			n=n.toUpperCase();
+			document.getElementById(val).value=n;
+		}
+
+		function msg(val)
+			{
+				var n,count=0;
+				 n=document.getElementById(val).value;
+				var l=n.length;
+				 if(l==0)
+				{
+				document.getElementById("msg").innerHTML="please fill it...!!!!";
+				}
+			}
+		function reset(val)
+			{
+				document.getElementById("val").value="";
+				document.getElementById("val").innerHTML=" ";
+			}
+
+</script>
+</head>
+<body>
+
+name1:--<input type="text" id="s" onkeyup="upp('s')" onblur="msg('s')"></br>
+name2:--<input type="text" id="n" onkeyup="upp('n')" onblur="msg('n')"></br>
+name3:--<input type="text" id="m" onkeyup="upp('m')" onblur="msg('m')"></br>
+name4:--<input type="text" id="o" onkeyup="upp('o')" onblur="msg('o')"></br>
+<button onclick="reset(val)">reset</button>
+<p id="msg"></p>
+</body>
+</html>

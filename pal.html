@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script language="javascript">
+              function check()
+			{
+			var n,r,s,sum=0,num;
+			num=document.getElementById("nu").value;
+			num=n;
+			document.getElementById("nu").value=num;
+			while(n>0)
+			{
+			r=n%10;
+			s=s*10+r;
+			n=parseInt(n/10);
+			}
+			if(n==sum)
+			{
+			document.getElementById("msg").innerHTML="num is palindrome";
+			}
+			else
+			{
+			document.getElementById("msg").innerHTML="num is not palindrome";
+			}
+			}
+	</script>
+</head>			
+<body>
+number=<input type="number" id="nu">
+<button id="btn" onclick="check()">check</button>
+<p id="msg"></p>
+</body></html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<script language="javascript">
+		function submit()
+			{
+				var n,c;
+				n=Number(document.getElementById("fn").value);
+				
+					if(n%2==0)
+				document.getElementById("msg").innerHTML="even number";
+					else
+				document.getElementById("msg").innerHTML="odd number";
+			}
+			
+		function reset()
+			{
+				document.getElementById("fn").value=" ";
+				document.getElementById("msg").innerHTML=" ";
+			}	
+</script>
+
+</head>
+<body>
+number:-<input type="text" id="fn"></br>
+
+<button id="btn" onclick="submit()">submit</button>
+<button id="btn" onclick="reset()">reset</button>
+<p id="msg"></p>
+
+</body>
+</html>

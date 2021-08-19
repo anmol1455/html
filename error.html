@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+	function check()
+		{ var txt;
+		var a,b,c;
+		a=Number(document.getElementById("s").value);
+		b=Number(document.getElementById("h").value);
+		try
+		{
+			c=a/b;
+		document.write(c);
+		}
+		catch(err)
+		{
+		txt="error in the txt";
+		txt+="discription"+err.message;
+		alert(c);
+	document.write(c);
+		}
+}
+</script>
+</head>
+<body>
+num 1:-<input type="text" id="s"/>
+num 2:-<input type="text" id="h"/>
+
+<button id="btn" onclick="check()">click here</button>
+</body>
+</html>

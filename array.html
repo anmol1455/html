@@ -1,0 +1,41 @@
+<!doctype html><html>
+<head>
+	<script language="javascript">
+		
+		function check()
+			{
+				var arr=[1,2,3,4,5,6,7,8,9,10];
+				var i,f;
+				var n=Number(document.getElementById("a").value);
+				for(i=0;i<10;i++)
+				{
+					if(n==arr[i])
+					{
+					(f==1);
+					document.getElementById("msg").innerHTML="number exist in array.";
+					break;
+					}
+				}
+					if(f==0)
+					{
+					document.getElementById("msg").innerHTML="number is not exist in array.";
+					break;
+					}
+				
+			}
+		
+		
+	</script>
+
+</head>
+
+
+<body>
+number:-<input type="text" id="a"></br></br>
+<p id="msg"></p>
+<p id="ms"></p>
+
+<button id="btn" onclick="check()">check</button>
+<button id="bt" onclick="rec()">recheck</button>
+</body>
+</html>

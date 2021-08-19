@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<script language="javascript">
+
+		function add()
+		{
+			var n,n1,n2;
+			n1=Number(document.getElementById("fn").value);
+			n2=Number(document.getElementById("sn").value);
+			n=n1+n2;
+			document.getElementById("sm").value="n";
+		}
+
+		function reset()
+		{
+			document.getElementById("fn").value=" ";
+			document.getElementById("sn").value=" ";
+			document.getElementById("sm").value=" ";
+		}
+</script>	
+</head>
+<body>
+<center><table>
+<caption><u><font size="5"face="arial">Calculator</font></u></caption>
+	
+	<tr>
+		<th colspan="2"></th>
+	</tr>
+
+	<tr>
+		<td>Mob 1:--</td>
+		<td><input type="number" id="fn"></td>
+	</tr>
+
+	<tr>
+		<td>Mob 2:--</td>
+		<td><input type="number" id="sn"></td>
+	</tr>
+
+
+	<tr>
+		<td>Sum:--</td>
+		<td><input type="number" id="sm"></td>
+	</tr>
+
+	
+
+</table>
+	<button id="btn" onclick="add()">Add</button>&nbsp;&nbsp;
+	<button id="btn" onclick="reset()">Reset</button></br>
+</center>
+</body>
+
+
+</html>
